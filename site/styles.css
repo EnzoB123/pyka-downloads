@@ -1,0 +1,29 @@
+:root { color-scheme: dark; font-family: 'Segoe UI', system-ui, sans-serif; color: #e8ebed; background: #101318; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-underline-offset: .3em; }
+a:focus-visible { outline: 3px solid #b0edb2; outline-offset: 6px; }
+header, main, footer { width: min(1180px, 100% - 4rem); margin-inline: auto; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 2rem; border-bottom: 1px solid #30373e; }
+header > a:last-child, footer { font-size: .875rem; }
+.brand { font-size: 1.8rem; font-weight: 900; letter-spacing: -.06em; text-decoration: none; }
+.brand span { color: #b0edb2; }
+main { display: grid; grid-template-columns: 1.2fr 1fr; gap: 6rem; padding-block: 6rem; align-items: center; min-height: calc(100svh - 190px); }
+.eyebrow { color: #b0edb2; font-size: .875rem; font-weight: 650; letter-spacing: .12em; }
+h1 { font-size: clamp(3rem, 5.5vw, 5rem); line-height: 1.04; letter-spacing: -.055em; margin: 1.5rem 0; }
+.description { font-size: 1.125rem; line-height: 1.75; color: #b7c0c8; max-width: 32rem; }
+.download { display: inline-flex; gap: 1.5rem; justify-content: space-between; align-items: center; background: #b0edb2; color: #101318; padding: 1.1rem 1.4rem; border-radius: .6rem; font-weight: 700; text-decoration: none; margin-top: 1.3rem; }
+.download:hover { background: #ccf8ce; }
+.release-status, .note, .preview { font-size: .875rem; color: #a5afb9; line-height: 1.65; }
+.note { max-width: 26rem; margin-top: 2rem; }
+.setup { background: #171c22; border: 1px solid #30373e; border-top: 4px solid #b0edb2; padding: 2rem; border-radius: .4rem; }
+h2 { font-size: 1.7rem; letter-spacing: -.03em; }
+ol { list-style: none; counter-reset: steps; padding: 0; margin-block: 2rem; }
+li { display: flex; gap: 1rem; margin-block: 1.5rem; counter-increment: steps; }
+li::before { content: '0' counter(steps); font-size: .875rem; color: #b0edb2; padding-top: .2rem; }
+h3 { font-size: 1rem; margin: 0 0 .4rem; }
+li p { color: #b7c0c8; font-size: 1rem; line-height: 1.65; margin: 0; }
+.preview { border-top: 1px solid #30373e; padding-top: 1.2rem; margin-bottom: 0; }
+footer { border-top: 1px solid #30373e; display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; color: #a5afb9; line-height: 1.7; }
+@media (max-width: 850px) { main { gap: 3rem; grid-template-columns: 1fr; padding-block: 3rem; } .intro { max-width: 36rem; } }
+@media (max-width: 480px) { header, main, footer { width: calc(100% - 2rem); } .setup { padding: 1.4rem; } footer { flex-direction: column; } .download { width: 100%; } }
