@@ -27,3 +27,5 @@ li p { color: #b7c0c8; font-size: 1rem; line-height: 1.65; margin: 0; }
 footer { border-top: 1px solid #30373e; display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.5rem; color: #a5afb9; line-height: 1.7; }
 @media (max-width: 850px) { main { gap: 3rem; grid-template-columns: 1fr; padding-block: 3rem; } .intro { max-width: 36rem; } }
 @media (max-width: 480px) { header, main, footer { width: calc(100% - 2rem); } .setup { padding: 1.4rem; } footer { flex-direction: column; } .download { width: 100%; } }
+
+.android-download { margin-top: 12px; background: #233c35; color: #c9f5dc; }
